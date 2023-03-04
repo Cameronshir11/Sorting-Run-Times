@@ -119,7 +119,31 @@ $ python3 runtimes.py --max_x=22
 ```
 and copy/paste the resulting table into this README file below this line.
 
-<!-- add the table here -->
+|               | timsort  | merge_sorted  | quick_sorted  |
+| ------------- | -------- | ------------- | ------------- |
+| n=2**0.00e+00 | 3.51e-06 |    3.26e-06   |     2.85e-06  |
+| n=2**1.00e+00 | 2.85e-06 |    9.71e-06   |     1.17e-05  |
+| n=2**2.00e+00 | 2.66e-06 |    1.68e-05   |     1.69e-05  |
+| n=2**3.00e+00 | 3.58e-06 |    3.60e-05   |     3.80e-05  |
+| n=2**4.00e+00 | 4.56e-06 |    7.95e-05   |     8.15e-05  |
+| n=2**5.00e+00 | 7.63e-06 |    1.70e-04   |     1.88e-04  |
+| n=2**6.00e+00 | 1.64e-05 |    3.88e-04   |     4.20e-04  |
+| n=2**7.00e+00 | 3.01e-05 |    8.42e-04   |     1.02e-03  |
+| n=2**8.00e+00 | 7.06e-05 |    1.80e-03   |     2.38e-03  |
+| n=2**9.00e+00 | 1.38e-04 |    3.88e-03   |     5.31e-03  |
+| n=2**1.00e+01 | 2.93e-04 |    8.97e-03   |     1.21e-02  |
+| n=2**1.10e+01 | 6.60e-04 |    1.96e-02   |     2.88e-02  |
+| n=2**1.20e+01 | 1.47e-03 |    4.26e-02   |     5.21e-02  |
+| n=2**1.30e+01 | 3.16e-03 |    9.21e-02   |     1.26e-01  |
+| n=2**1.40e+01 | 6.88e-03 |    1.99e-01   |     2.51e-01  |
+| n=2**1.50e+01 | 1.55e-02 |    4.30e-01   |     5.30e-01  |
+| n=2**1.60e+01 | 3.53e-02 |    8.08e-01   |     1.11e+00  |
+| n=2**1.70e+01 | 8.02e-02 |    1.83e+00   |     2.47e+00  |
+| n=2**1.80e+01 | 1.83e-01 |    4.10e+00   |     5.33e+00  |
+| n=2**1.90e+01 | 4.17e-01 |    8.83e+00   |     1.12e+01  |
+| n=2**2.00e+01 | 1.03e+00 |    1.86e+01   |     2.39e+01  |
+| n=2**2.10e+01 | 2.23e+00 |    3.89e+01   |     5.38e+01  |
+| n=2**2.20e+01 | 4.93e+00 |    8.21e+01   |     1.21e+02  |
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
@@ -212,7 +236,6 @@ Follow the instructions in the comments to provide a proper definition of `xs`,
 then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
-<!-- add the table here -->
 
 |               | timsort  | merge_sorted  | quick_sorted  |
 | ------------- | -------- | ------------- | ------------- |
